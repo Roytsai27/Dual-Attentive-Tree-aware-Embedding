@@ -2,7 +2,7 @@
 
 This is our implementation for the paper:
 
-> DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection. Sundong Kim$^∗$, Yu-Che Tsai$^∗$, Karandeep Singh, Yeonsoo Choi, Cheng-Te Li, Meeyoung Cha. 
+> DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection. Sundong Kim∗, Yu-Che Tsai∗, Karandeep Singh, Yeonsoo Choi, Cheng-Te Li, Meeyoung Cha. 
 
 Submitting to KDD'2020
 

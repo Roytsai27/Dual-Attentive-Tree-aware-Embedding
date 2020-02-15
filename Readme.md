@@ -1,8 +1,8 @@
-# DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection
+# DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection
 
 This is our implementation for the paper:
 
-> DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection. Sundong Kim∗, Yu-Che Tsai∗, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, Meeyoung Cha. 
+> DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection. Sundong Kim$^∗$, Yu-Che Tsai$^∗$, Karandeep Singh, Yeonsoo Choi, Cheng-Te Li, Meeyoung Cha. 
 
 Submitting to KDD'2020
 
@@ -15,14 +15,18 @@ Submitting to KDD'2020
 * numpy==1.16.4
 * pandas==0.25.3 
 
+## Model architecture
+![](https://i.imgur.com/0BmFe7K.jpg)
+
+
 ## How to train the model
-Our proposed DATE is a two-stage model, we train XGBoost model first and use the pre-trained model to generate cross feature for second embedding model.
+Our proposed DATE is a two-stage model, we train Xgboost model first and use the pre-trained model to generate cross feature for second embedding model.
 
 1. Run preprocess_data.py 
 This script would run the preprocessing for raw data from customs and dump a preprocessed file.
 2. Run generate_loader.py
-This will train and evaluate XGBoost model and XGB+LR model
-Also, the script will dump a pickle file for embedding model input
+This will train and evaluate Xgboost model and XGB+LR model
+Aslo, the scipt will dump a pickle file for embedding model input
 3. Run train.py
 you can tune the hyper parameters by adding args after train.py
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
@@ -39,3 +43,6 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 --device: The device name for training, if train with cpu please use:"cpu" 
 --output: save the performance output in a csv file
 ```
+
+## Reslut
+![](https://i.imgur.com/20EwrQQ.png)

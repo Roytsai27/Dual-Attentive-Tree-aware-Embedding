@@ -12,6 +12,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # load preprocessed data
+# with open("./processed_data_13-01-01.pickle","rb") as f :
+#     processed_data = pickle.load(f)
 with open("./processed_data.pickle","rb") as f :
     processed_data = pickle.load(f)
 print(processed_data.keys())
@@ -42,6 +44,10 @@ xgb_testy = processed_data["xgboost_data"]["test_y"]
 
 # build xgboost model
 print("Training xgboost model...")
+columns = ['FOB.VALUE', 'CIF.VALUE', 'TOTAL.TAXES', 'GROSS.WEIGHT', 'QUANTITY', 'EXCHANGERATE', 'Unitprice', 'WUnitprice', 'TaxRatio', 'FOBCIFRatio', 'TaxUnitquantity', 'TARIFF.CODE', 'HS6', 'HS4', 'HS2', 'SGD.DayofYear', 'SGD.WeekofYear', 'SGD.MonthofYear'] + [col for col in train.columns if 'RiskH' in col] 
+xgb_trainx = pd.DataFrame(xgb_trainx,columns=columns)
+xgb_validx = pd.DataFrame(xgb_validx,columns=columns)
+xgb_testx = pd.DataFrame(xgb_testx,columns=columns)
 xgb_clf = XGBClassifier(n_estimators=100, max_depth=4,n_jobs=-1)
 xgb_clf.fit(xgb_trainx,xgb_trainy)
 
@@ -62,6 +68,8 @@ for i in [99,98,95,90]:
     recall = sum(xgb_testy[y_prob > threshold])/sum(xgb_testy)
     revenue_recall = sum(revenue_test[y_prob > threshold]) /sum(revenue_test)
     print(f'Precision: {round(precision, 4)}, Recall: {round(recall, 4)}, Seized Revenue (Recall): {round(revenue_recall, 4)}')
+
+xgb_clf.get_booster().dump_model('xgb_model.txt', with_stats=False)
 
 # Xgboost+LR model 
 from sklearn.linear_model import LogisticRegression
@@ -130,7 +138,7 @@ test_items = [hs6_mapping.get(x,0) for x in test_raw_items]
 train_rows = train.shape[0]
 valid_rows = valid.shape[0] + train_rows
 X_leaves = np.concatenate((X_train_leaves, X_valid_leaves, X_test_leaves), axis=0) # make sure the dimensionality
-transformed_leaves, leaf_num = process_leaf_idx(X_leaves)
+transformed_leaves, leaf_num, new_leaf_index = process_leaf_idx(X_leaves)
 train_leaves, valid_leaves, test_leaves = transformed_leaves[:train_rows],\
                                           transformed_leaves[train_rows:valid_rows],\
                                           transformed_leaves[valid_rows:]
@@ -172,3 +180,6 @@ data4embedding = {"train_dataset":train_dataset,"valid_dataset":valid_dataset,"t
 # save data
 with open("torch_data_test.pickle", 'wb') as f:
     pickle.dump(data4embedding, f, protocol=pickle.HIGHEST_PROTOCOL)
+
+with open("leaf_index.pickle", "wb") as f:
+    pickle.dump(new_leaf_index, f, protocol=pickle.HIGHEST_PROTOCOL)

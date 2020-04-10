@@ -60,11 +60,14 @@ def process_leaf_idx(X_leaves):
         column = X_leaves[:,c]
         unique_vals = list(sorted(set(column)))
         new_idx = {v:(i+total_leaves) for i,v in enumerate(unique_vals)}
+        for i,v in enumerate(unique_vals):
+            leaf_id = i+total_leaves
+            new_leaf_index[leaf_id] = {c:v}
         leaves[:,c] = [new_idx[v] for v in column]
         total_leaves += len(unique_vals)
         
     assert leaves.ravel().max() == total_leaves - 1
-    return leaves,total_leaves
+    return leaves,total_leaves,new_leaf_index
 
 def stratify_sample(y,test_size=0.2,seed=0):
     y_ser = pd.Series(y)

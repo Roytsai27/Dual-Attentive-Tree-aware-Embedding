@@ -1,5 +1,6 @@
 # DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+
 This is our implementation for the paper:
 
 > DATE: Dual Attentive Tree-aware Embedding for CustomsFrauds Detection. Sundong Kim*, Yu-Che Tsai∗, Karandeep Singh, Etim Ibok, Yeonsoo Choi, Cheng-Te Li, Meeyoung Cha. 

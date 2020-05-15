@@ -191,7 +191,7 @@ for profile in profile_candidates:
     test = tag_risky_profiles(test, profile, risk_profiles[profile], option=option)
 
 # Features to use in a classifier
-column_to_use = ['FOB.VALUE', 'CIF.VALUE', 'TOTAL.TAXES', 'GROSS.WEIGHT', 'QUANTITY', 'EXCHANGERATE', 'Unitprice', 'WUnitprice', 'EXCHANGERATE', 'TaxRatio', 'FOBCIFRatio', 'TaxUnitquantity', 'TARIFF.CODE', 'HS6', 'HS4', 'HS2', 'SGD.DayofYear', 'SGD.WeekofYear', 'SGD.MonthofYear'] + [col for col in train.columns if 'RiskH' in col] 
+column_to_use = ['FOB.VALUE', 'CIF.VALUE', 'TOTAL.TAXES', 'GROSS.WEIGHT', 'QUANTITY', 'Unitprice', 'WUnitprice', 'EXCHANGERATE', 'TaxRatio', 'FOBCIFRatio', 'TaxUnitquantity', 'TARIFF.CODE', 'HS6', 'HS4', 'HS2', 'SGD.DayofYear', 'SGD.WeekofYear', 'SGD.MonthofYear'] + [col for col in train.columns if 'RiskH' in col] 
 X_train = train[column_to_use].values
 X_valid = valid[column_to_use].values
 X_test = test[column_to_use].values

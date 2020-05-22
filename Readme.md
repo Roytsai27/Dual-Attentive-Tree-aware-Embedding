@@ -14,11 +14,11 @@ This is our implementation for the paper:
 * numpy==1.16.4
 * pandas==0.25.3 
 
-## Model architecture
+## Model Architecture
 ![](https://i.imgur.com/0BmFe7K.jpg)
 
 
-## How to train the model
+## How to Train the Model
 Our proposed DATE is a two-stage model, we train Xgboost model first and use the pre-trained model to generate cross feature for second embedding model.
 
 1. Run preprocess_data.py 
@@ -43,11 +43,11 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 --output: save the performance output in a csv file
 ```
 
-## Result
+## Main Results
 ![](https://i.imgur.com/20EwrQQ.png)
 
 
-## Synthetic data
+## Synthetic Data
 For your understanding, synthetic import declarations are uploaded in the `data/` directory.
 To use this repository, users are expected to preprocess their own import declarations into the similar format.
 Note that the variable name used in the code are slightly different from the synthetic data.

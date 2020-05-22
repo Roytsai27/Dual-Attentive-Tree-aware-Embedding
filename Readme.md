@@ -1,9 +1,9 @@
 # DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-This is our implementation for the paper:
+This is our implementation for the paper [[PDF]](kdd2020-date.pdf):
 
-\*Sundong Kim, \*Yu-Che Tsai, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, and Meeyoung Cha. DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). Virtual Event, USA, August 23-27, 2020. (\*: equally-contributed first authors) [PDF](kdd2020-date.pdf)
+\*Sundong Kim, \*Yu-Che Tsai, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, and Meeyoung Cha. DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). Virtual Event, USA, August 23-27, 2020. (\*: equally-contributed first authors) 
 
 ## Requirements
 * Ranger optimizer:

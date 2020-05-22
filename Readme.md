@@ -3,7 +3,7 @@
 
 This is our implementation for the paper:
 
-\*Sundong Kim, \*Yu-Che Tsai, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, and Meeyoung Cha. DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection. To appear in Proceedings of ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). San Diego, CA, USA, August 23-27, 2020. (\*: equally-contributed first authors)(accepted)
+\*Sundong Kim, \*Yu-Che Tsai, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, and Meeyoung Cha. DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection. Proceedings of ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). Virtual Event, USA, August 23-27, 2020. (\*: equally-contributed first authors) (To Appear)
 
 ## Requirements
 * Ranger optimizer:
@@ -16,6 +16,21 @@ This is our implementation for the paper:
 
 ## Model architecture
 ![](https://i.imgur.com/0BmFe7K.jpg)
+
+## Synthetic data
+For your understanding, synthetic import declaration data is uploaded in the `data/` directory.
+To use this repository, customs officials are expected to preprocess their own data into this format.
+
+|   sgd.id | sgd.date        |   importer.id | ... |   total.taxes | illicit   | revenue   |
+|-------|------------------|----------|-----|------------------|------------------|----------|
+|    SGD1 | 13-01-02 |    IMP56598 | ... | 468 | 0    | 0   |
+|    SGD2 | 13-01-02 |   IMP109304 | ... | 94337 | 0  | 0    |
+|    SGD3 | 13-01-02 |  IMP383355  | ... | 10826 | 0    | 0   |
+|    ...  | ...      |  ... | ... |   ...  | ...  | ...   | 
+|  SGD31 | 13-01-02 | IMP239001 | ... | 2707 | 1 | 1302 |
+|    ...  | ...      |  ... | ... |   ...  | ...  | ...    | 
+|   SGD100000 | 17-12-31  |  IMP821186 | ... |  2713 | 0    | 0 |
+
 
 
 ## How to train the model

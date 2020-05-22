@@ -43,5 +43,5 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 --output: save the performance output in a csv file
 ```
 
-## Reslut
+## Result
 ![](https://i.imgur.com/20EwrQQ.png)

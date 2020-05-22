@@ -17,21 +17,6 @@ This is our implementation for the paper:
 ## Model architecture
 ![](https://i.imgur.com/0BmFe7K.jpg)
 
-## Synthetic data
-For your understanding, synthetic import declaration data is uploaded in the `data/` directory.
-To use this repository, customs officials are expected to preprocess their own data into this format.
-
-|   sgd.id | sgd.date        |   importer.id | ... |   total.taxes | illicit   | revenue   |
-|-------|------------------|----------|-----|------------------|------------------|----------|
-|    SGD1 | 13-01-02 |    IMP56598 | ... | 468 | 0    | 0   |
-|    SGD2 | 13-01-02 |   IMP109304 | ... | 94337 | 0  | 0    |
-|    SGD3 | 13-01-02 |  IMP383355  | ... | 10826 | 0    | 0   |
-|    ...  | ...      |  ... | ... |   ...  | ...  | ...   | 
-|  SGD31 | 13-01-02 | IMP239001 | ... | 2707 | 1 | 1302 |
-|    ...  | ...      |  ... | ... |   ...  | ...  | ...    | 
-|   SGD100000 | 17-12-31  |  IMP821186 | ... |  2713 | 0    | 0 |
-
-
 
 ## How to train the model
 Our proposed DATE is a two-stage model, we train Xgboost model first and use the pre-trained model to generate cross feature for second embedding model.
@@ -60,3 +45,19 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 
 ## Result
 ![](https://i.imgur.com/20EwrQQ.png)
+
+
+## Synthetic data
+For your understanding, synthetic import declarations are uploaded in the `data/` directory.
+To use this repository, users are expected to preprocess their own import declarations into the similar format.
+Note that the variable name used in the code are slightly different from the synthetic data.
+
+|   sgd.id | sgd.date        |   importer.id | ... |   total.taxes | illicit   | revenue   |
+|-------|------------------|----------|-----|------------------|------------------|----------|
+|    SGD1 | 13-01-02 |    IMP56598 | ... | 468 | 0    | 0   |
+|    SGD2 | 13-01-02 |   IMP109304 | ... | 94337 | 0  | 0    |
+|    SGD3 | 13-01-02 |  IMP383355  | ... | 10826 | 0    | 0   |
+|    ...  | ...      |  ... | ... |   ...  | ...  | ...   | 
+|  SGD31 | 13-01-02 | IMP239001 | ... | 2707 | 1 | 1302 |
+|    ...  | ...      |  ... | ... |   ...  | ...  | ...    | 
+|   SGD100000 | 17-12-31  |  IMP821186 | ... |  2713 | 0    | 0 |

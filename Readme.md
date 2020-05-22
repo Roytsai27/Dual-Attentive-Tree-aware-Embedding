@@ -55,8 +55,6 @@ Code for auxiliary experiments are uploaded in the `experiments/` directory.
 * loss-weight: Section 7.3, date_cls and date_rev by controlling alpha
 
 
-
-
 ## Synthetic Data
 For your understanding, synthetic import declarations are uploaded in the `data/` directory.
 To use this repository, users are expected to preprocess their own import declarations into the similar format.
@@ -71,3 +69,14 @@ Note that the variable name used in the code can be slightly different from the 
 |  SGD31 | 13-01-02 | IMP239001 | ... | 2707 | 1 | 1302 |
 |    ...  | ...      |  ... | ... |   ...  | ...  | ...    | 
 |   SGD100000 | 17-12-31  |  IMP821186 | ... |  2713 | 0    | 0 |
+
+## Citation
+If you mention or use DATE for your publication, please cite the original paper:
+```LaTeX
+@inproceedings{kimtsai2020date,
+  title={DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection},
+  author={Kim, Sundong and Tsai, Yu-Che and Singh, Karandeep and Choi, Yeonsoo and Ibok, Etim and Li, Cheng-Te and Cha, Meeyoung},
+  booktitle={Proceedings of ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  year={2020}
+}
+```

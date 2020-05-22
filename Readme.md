@@ -1,4 +1,4 @@
-# DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection
+# DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 This is our implementation for the paper [[PDF]](kdd2020-date.pdf):
@@ -74,7 +74,7 @@ Note that the variable name used in the code can be slightly different from the 
 If you mention or use DATE for your publication, please cite the original paper:
 ```LaTeX
 @inproceedings{kimtsai2020date,
-  title={DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection},
+  title={DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection},
   author={Kim, Sundong and Tsai, Yu-Che and Singh, Karandeep and Choi, Yeonsoo and Ibok, Etim and Li, Cheng-Te and Cha, Meeyoung},
   booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
   year={2020}

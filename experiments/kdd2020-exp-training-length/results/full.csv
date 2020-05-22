@@ -1,0 +1,119 @@
+Model:DATE_16-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:16-06-01
+ Metrics:
+f1:0.1791 auc:0.7972
+Pr@1:0.4286 Pr@2:0.2509 Pr@5:0.1299 Pr@10:0.1103
+Re@1:0.1913 Re@2:0.2239 Re@5:0.2899 Re@10:0.4923
+Rev@1:0.2362 Rev@2:0.2822 Rev@5:0.3539 Rev@10:0.5395
+Model:DATE_15-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:15-12-01
+ Metrics:
+f1:0.5369 auc:0.9311
+Pr@1:0.8478 Pr@2:0.6473 Pr@5:0.3308 Pr@10:0.1856
+Re@1:0.3775 Re@2:0.5776 Re@5:0.7379 Re@10:0.8281
+Rev@1:0.3456 Rev@2:0.5181 Rev@5:0.6702 Rev@10:0.7824
+Model:DATE_15-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:15-06-01
+ Metrics:
+f1:0.6018 auc:0.9486
+Pr@1:0.9465 Pr@2:0.7465 Pr@5:0.3583 Pr@10:0.1924
+Re@1:0.4224 Re@2:0.6658 Re@5:0.7994 Re@10:0.8583
+Rev@1:0.4063 Rev@2:0.6491 Rev@5:0.7963 Rev@10:0.8448
+Model:DATE_14-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-06-01
+ Metrics:
+f1:0.7709 auc:0.9666
+Pr@1:0.9678 Pr@2:0.8200 Pr@5:0.3783 Pr@10:0.2004
+Re@1:0.4319 Re@2:0.7318 Re@5:0.8439 Re@10:0.8941
+Rev@1:0.3880 Rev@2:0.7005 Rev@5:0.8277 Rev@10:0.8861
+Model:DATE_14-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-12-01
+ Metrics:
+f1:0.6890 auc:0.9566
+Pr@1:0.8944 Pr@2:0.7472 Pr@5:0.3715 Pr@10:0.1972
+Re@1:0.3991 Re@2:0.6667 Re@5:0.8288 Re@10:0.8798
+Rev@1:0.4911 Rev@2:0.6517 Rev@5:0.8021 Rev@10:0.8603
+Model:DATE_13-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:13-12-01
+ Metrics:
+f1:0.7672 auc:0.9716
+Pr@1:0.8984 Pr@2:0.8208 Pr@5:0.3884 Pr@10:0.2039
+Re@1:0.4009 Re@2:0.7324 Re@5:0.8665 Re@10:0.9091
+Rev@1:0.4786 Rev@2:0.7064 Rev@5:0.8491 Rev@10:0.9013
+Model:DATE_13-01-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:13-01-01
+ Metrics:
+f1:0.7401 auc:0.9674
+Pr@1:0.8969 Pr@2:0.7543 Pr@5:0.3889 Pr@10:0.2033
+Re@1:0.3972 Re@2:0.6730 Re@5:0.8677 Re@10:0.9072
+Rev@1:0.4482 Rev@2:0.6689 Rev@5:0.8574 Rev@10:0.9024
+Model:DATE_13-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:13-06-01
+ Metrics:
+f1:0.7636 auc:0.9679
+Pr@1:0.9258 Pr@2:0.8095 Pr@5:0.3895 Pr@10:0.2031
+Re@1:0.4130 Re@2:0.7224 Re@5:0.8689 Re@10:0.9062
+Rev@1:0.4925 Rev@2:0.6977 Rev@5:0.8521 Rev@10:0.9026
+Model:DATE_13-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:13-06-01
+ Metrics:
+f1:0.7461 auc:0.9686
+Pr@1:0.7787 Pr@2:0.7833 Pr@5:0.3910 Pr@10:0.2042
+Re@1:0.3475 Re@2:0.6990 Re@5:0.8722 Re@10:0.9111
+Rev@1:0.4872 Rev@2:0.7278 Rev@5:0.8616 Rev@10:0.9027
+Model:DATE_13-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:13-12-01
+ Metrics:
+f1:0.7577 auc:0.9721
+Pr@1:0.9432 Pr@2:0.8106 Pr@5:0.3934 Pr@10:0.2050
+Re@1:0.4209 Re@2:0.7234 Re@5:0.8775 Re@10:0.9145
+Rev@1:0.4881 Rev@2:0.7112 Rev@5:0.8535 Rev@10:0.8947
+Model:DATE_14-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-06-01
+ Metrics:
+f1:0.7371 auc:0.9662
+Pr@1:0.8463 Pr@2:0.7859 Pr@5:0.3804 Pr@10:0.2033
+Re@1:0.3733 Re@2:0.6966 Re@5:0.8486 Re@10:0.9070
+Rev@1:0.5219 Rev@2:0.7035 Rev@5:0.8471 Rev@10:0.9066
+Model:DATE_14-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-12-01
+ Metrics:
+f1:0.6824 auc:0.9607
+Pr@1:0.8716 Pr@2:0.7253 Pr@5:0.3700 Pr@10:0.1978
+Re@1:0.3890 Re@2:0.6472 Re@5:0.8254 Re@10:0.8825
+Rev@1:0.5212 Rev@2:0.6773 Rev@5:0.8056 Rev@10:0.8773
+Model:DATE_14-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-06-01
+ Metrics:
+f1:0.7559 auc:0.9683
+Pr@1:0.9624 Pr@2:0.8108 Pr@5:0.3808 Pr@10:0.2019
+Re@1:0.4295 Re@2:0.7235 Re@5:0.8496 Re@10:0.9007
+Rev@1:0.4437 Rev@2:0.7142 Rev@5:0.8322 Rev@10:0.8837
+Model:DATE_14-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:14-12-01
+ Metrics:
+f1:0.6994 auc:0.9606
+Pr@1:0.9400 Pr@2:0.7932 Pr@5:0.3724 Pr@10:0.1992
+Re@1:0.4195 Re@2:0.7076 Re@5:0.8307 Re@10:0.8885
+Rev@1:0.4494 Rev@2:0.6853 Rev@5:0.8173 Rev@10:0.8985
+Model:DATE_15-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:15-06-01
+ Metrics:
+f1:0.6419 auc:0.9522
+Pr@1:0.8846 Pr@2:0.7627 Pr@5:0.3729 Pr@10:0.1979
+Re@1:0.3948 Re@2:0.6804 Re@5:0.8318 Re@10:0.8807
+Rev@1:0.4488 Rev@2:0.6711 Rev@5:0.8039 Rev@10:0.8554
+Model:DATE_15-12-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:15-12-01
+ Metrics:
+f1:0.4630 auc:0.9244
+Pr@1:0.7011 Pr@2:0.5430 Pr@5:0.3218 Pr@10:0.1789
+Re@1:0.3115 Re@2:0.4845 Re@5:0.7179 Re@10:0.7983
+Rev@1:0.3244 Rev@2:0.4695 Rev@5:0.6627 Rev@10:0.7306
+Model:DATE_16-06-01 epoch:10 dim:16 lr:0.005000 l2:0.000000 beta:0.000000 heads:4 fusion:concat activation:relu
+Starting_date:16-06-01
+ Metrics:
+f1:0.1684 auc:0.7729
+Pr@1:0.4322 Pr@2:0.2408 Pr@5:0.1142 Pr@10:0.1002
+Re@1:0.1929 Re@2:0.2148 Re@5:0.2548 Re@10:0.4471
+Rev@1:0.2273 Rev@2:0.2815 Rev@5:0.3389 Rev@10:0.4888

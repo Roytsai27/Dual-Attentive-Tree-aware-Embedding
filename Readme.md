@@ -19,17 +19,17 @@ This is our implementation for the paper:
 
 
 ## How to Train the Model
-Our proposed DATE is a two-stage model, we train Xgboost model first and use the pre-trained model to generate cross feature for second embedding model.
+Our proposed DATE is a two-stage model, we train XGBoost model first and use the pre-trained model to generate cross feature for second embedding model.
 
 1. Run preprocess_data.py 
 This script would run the preprocessing for raw data from customs and dump a preprocessed file.
 2. Run generate_loader.py
-This will train and evaluate Xgboost model and XGB+LR model
-Aslo, the scipt will dump a pickle file for embedding model input
+This will train and evaluate Xgboost model and XGB+LR model.
+Also, the scipt will dump a pickle file for embedding model input.
 3. Run train.py
-you can tune the hyper parameters by adding args after train.py
+You can tune the hyper parameters by adding args after train.py.
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
-**Important:** make sure you create a folder named "results" to store the result
+__Important:__ make sure you create a folder named "results" to store the result.
 ```
 --epoch: number of epochs
 --l2: l2 regularization 
@@ -46,11 +46,21 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 ## Main Results
 ![](https://i.imgur.com/20EwrQQ.png)
 
+## Other Experiments & Codes 
+Code for auxiliary experiments are uploaded in the `experiments/` directory.
+* revcls: Section 5.1, date_cls and date_rev results 
+* training-length: Section 5.4, effects on training length
+* corrupted-data: Section 6, way to leverage existing data
+* hyperparameter-analysis: Section 7.1-2, hyperparameter analysis
+* loss-weight: Section 7.3, date_cls and date_rev by controlling alpha
+
+
+
 
 ## Synthetic Data
 For your understanding, synthetic import declarations are uploaded in the `data/` directory.
 To use this repository, users are expected to preprocess their own import declarations into the similar format.
-Note that the variable name used in the code are slightly different from the synthetic data.
+Note that the variable name used in the code can be slightly different from the synthetic data.
 
 |   sgd.id | sgd.date        |   importer.id | ... |   total.taxes | illicit   | revenue   |
 |-------|------------------|----------|-----|------------------|------------------|----------|

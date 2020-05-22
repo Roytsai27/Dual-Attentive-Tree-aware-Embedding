@@ -1,0 +1,19 @@
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:0' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:1' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:2' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:3' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:4' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'stochastic' --device 'cuda:5' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:0' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:1' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:2' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:3' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:4' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'deterministic' --device 'cuda:5' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:0' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:1' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:2' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:3' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:4' &
+python train.py --epoch 5 --save 1 --l2 0.01 --date '13-01-01' --rollback 'none' --device 'cuda:5' &
+wait

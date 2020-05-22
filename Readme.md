@@ -76,7 +76,7 @@ If you mention or use DATE for your publication, please cite the original paper:
 @inproceedings{kimtsai2020date,
   title={DATE: Dual Attentive Tree-aware Embedding for Customs Frauds Detection},
   author={Kim, Sundong and Tsai, Yu-Che and Singh, Karandeep and Choi, Yeonsoo and Ibok, Etim and Li, Cheng-Te and Cha, Meeyoung},
-  booktitle={Proceedings of ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
+  booktitle={Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining},
   year={2020}
 }
 ```

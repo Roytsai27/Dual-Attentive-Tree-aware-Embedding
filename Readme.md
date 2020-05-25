@@ -14,7 +14,6 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 ### Synthetic Data
 For your understanding, we upload the synthetic import declarations in the `data/` directory.
 Users are expected to preprocess their own import declarations into a similar format.
-Note that the variable name used in the code can be slightly different from the synthetic data.
 
 |sgd.id|sgd.date  |importer.id| tariff.code| ... |cif.value|total.taxes|illicit|revenue|
 |:----:|:--------:|:---------:|:----------:|:---:|--------:|----------:|:-----:|------:|
@@ -49,7 +48,7 @@ Also, the scipt will dump a pickle file for embedding model input.
 3. Run train.py
 You can tune the hyper parameters by adding args after train.py.
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
-__Important:__ make sure you create a folder named "results" to store the result.
+__Important:__ With default settings, the model will run on synthetic data.
 ```
 --epoch: number of epochs
 --l2: l2 regularization 
@@ -70,6 +69,8 @@ Results on proprietary Nigerian import declarations.
 
 ## Other Experiments & Codes 
 Code for auxiliary experiments are uploaded in the `experiments/` directory.
+Note that the variable name used in these experiments are slightly different from the synthetic data.
+
 * revcls: Section 5.1, date_cls and date_rev results 
 * training-length: Section 5.4, effects on training length
 * corrupted-data: Section 6, way to leverage existing data

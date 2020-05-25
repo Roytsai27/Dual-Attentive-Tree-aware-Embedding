@@ -9,7 +9,7 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 * DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
 
 ## Overview of the Transaction-level Import Data
-![](https://i.imgur.com/Rj5MCzo)
+![](https://i.imgur.com/Rj5MCzo.png)
 
 ### Synthetic Data
 For your understanding, we upload the synthetic import declarations in the `data/` directory.

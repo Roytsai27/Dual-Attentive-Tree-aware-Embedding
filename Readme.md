@@ -64,7 +64,7 @@ __Important:__ With default settings, the model will run on synthetic data.
 
 ## Main Results
 Results on proprietary Nigerian import declarations.
-![](figures/data_format.png)
+![](figures/main_results.png)
 
 
 ## Other Experiments & Codes 

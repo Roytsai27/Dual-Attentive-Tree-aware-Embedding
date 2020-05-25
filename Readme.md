@@ -60,15 +60,14 @@ For your understanding, synthetic import declarations are uploaded in the `data/
 To use this repository, users are expected to preprocess their own import declarations into the similar format.
 Note that the variable name used in the code can be slightly different from the synthetic data.
 
-|   sgd.id | sgd.date        |   importer.id | ... |   total.taxes | illicit   | revenue   |
-|-------|------------------|----------|-----|------------------|------------------|----------|
-|    SGD1 | 13-01-02 |    IMP56598 | ... | 468 | 0    | 0   |
-|    SGD2 | 13-01-02 |   IMP109304 | ... | 94337 | 0  | 0    |
-|    SGD3 | 13-01-02 |  IMP383355  | ... | 10826 | 0    | 0   |
-|    ...  | ...      |  ... | ... |   ...  | ...  | ...   | 
-|  SGD31 | 13-01-02 | IMP239001 | ... | 2707 | 1 | 1302 |
-|    ...  | ...      |  ... | ... |   ...  | ...  | ...    | 
-|   SGD100000 | 17-12-31  |  IMP821186 | ... |  2713 | 0    | 0 |
+|sgd.id|sgd.date  |importer.id| ... |total.taxes|illicit|revenue|
+|------|----------|-----------|-----|-----------|-------|-------|
+| SGD1 | 13-01-02 | IMP826164 | ... | 647       | 0     | 0     |
+| SGD2 | 13-01-02 | IMP837219 | ... | 3262      | 0     | 0     |
+| SGD3 | 13-01-02 | IMP117406 | ... | 5612      | 0     | 0     | 
+| SGD4 | 13-01-02 | IMP435108 | ... | 514       | 0     | 0     |
+| SGD5 | 13-01-02 | IMP717900 | ... | 397       | 1     | 980   |
+| ...  | ...      |    ...    | ... |   ...     | ...   | ...   | 
 
 ## Citation
 If you mention or use DATE for your publication, please cite the original paper:

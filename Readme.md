@@ -1,9 +1,13 @@
 # DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
-This is our implementation for the paper [[PDF]](kdd2020-date.pdf):
+Implementation of our KDD paper [DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection](kdd2020-date.pdf).
 
-\*Sundong Kim, \*Yu-Che Tsai, Karandeep Singh, Yeonsoo Choi, Etim Ibok, Cheng-Te Li, and Meeyoung Cha. DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection. In Proceedings of the 26th ACM SIGKDD International Conference on Knowledge Discovery and Data Mining (KDD). Virtual Event, USA, August 23-27, 2020. (\*: equally-contributed first authors) 
+DATE is a model to classify and rank illegal trade flows that contribute the most to the overall customs revenue when caught.
+* DATE combines a tree-based model for interpretability and transaction-level embeddings with dual attention mechanisms. 
+* DATE learns simultaneously from illicitness and surtax of each transaction.
+* DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
+
 
 ## Requirements
 * Ranger optimizer:

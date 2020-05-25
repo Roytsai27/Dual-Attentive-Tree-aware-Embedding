@@ -26,7 +26,7 @@ Note that the variable name used in the code can be slightly different from the 
 
 
 ## Model Architecture
-![](https://i.imgur.com/0BmFe7K.jpg)
+![](figures/model_architecture.jpg)
 
 
 ## Requirements
@@ -65,7 +65,7 @@ __Important:__ make sure you create a folder named "results" to store the result
 
 ## Main Results
 Results on proprietary Nigerian import declarations.
-![](https://i.imgur.com/20EwrQQ.png)
+![](figures/data_format.png)
 
 
 ## Other Experiments & Codes 

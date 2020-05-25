@@ -12,8 +12,6 @@ import warnings
 warnings.filterwarnings("ignore")
 
 # load preprocessed data
-# with open("./processed_data_13-01-01.pickle","rb") as f :
-#     processed_data = pickle.load(f)
 with open("./processed_data.pickle","rb") as f :
     processed_data = pickle.load(f)
 print(processed_data.keys())
@@ -44,7 +42,7 @@ xgb_testy = processed_data["xgboost_data"]["test_y"]
 
 # build xgboost model
 print("Training xgboost model...")
-columns = ['FOB.VALUE', 'CIF.VALUE', 'TOTAL.TAXES', 'GROSS.WEIGHT', 'QUANTITY', 'EXCHANGERATE', 'Unitprice', 'WUnitprice', 'TaxRatio', 'FOBCIFRatio', 'TaxUnitquantity', 'TARIFF.CODE', 'HS6', 'HS4', 'HS2', 'SGD.DayofYear', 'SGD.WeekofYear', 'SGD.MonthofYear'] + [col for col in train.columns if 'RiskH' in col] 
+columns = ['fob.value', 'cif.value', 'total.taxes', 'gross.weight', 'quantity', 'Unitprice', 'WUnitprice', 'TaxRatio', 'FOBCIFRatio', 'TaxUnitquantity', 'tariff.code', 'HS6', 'HS4', 'HS2', 'SGD.DayofYear', 'SGD.WeekofYear', 'SGD.MonthofYear'] + [col for col in train.columns if 'RiskH' in col] 
 xgb_trainx = pd.DataFrame(xgb_trainx,columns=columns)
 xgb_validx = pd.DataFrame(xgb_validx,columns=columns)
 xgb_testx = pd.DataFrame(xgb_testx,columns=columns)
@@ -109,12 +107,12 @@ for i in [99,98,95,90]:
     print(f'Precision: {round(precision, 4)}, Recall: {round(recall, 4)}, Seized Revenue (Recall): {round(revenue_recall, 4)}')
 
 # user & item information 
-train_raw_importers = train['IMPORTER.TIN'].values
-train_raw_items = train['TARIFF.CODE'].values
-valid_raw_importers = valid['IMPORTER.TIN'].values
-valid_raw_items = valid['TARIFF.CODE'].values
-test_raw_importers = test['IMPORTER.TIN']
-test_raw_items = test['TARIFF.CODE']
+train_raw_importers = train['importer.id'].values
+train_raw_items = train['tariff.code'].values
+valid_raw_importers = valid['importer.id'].values
+valid_raw_items = valid['tariff.code'].values
+test_raw_importers = test['importer.id']
+test_raw_items = test['tariff.code']
 
 # we need padding for unseen user or item 
 importer_set = set(train_raw_importers)
@@ -178,7 +176,7 @@ data4embedding = {"train_dataset":train_dataset,"valid_dataset":valid_dataset,"t
                   "leaf_num":leaf_num,"importer_num":importer_size,"item_size":item_size}
 
 # save data
-with open("torch_data_test.pickle", 'wb') as f:
+with open("torch_data.pickle", 'wb') as f:
     pickle.dump(data4embedding, f, protocol=pickle.HIGHEST_PROTOCOL)
 
 with open("leaf_index.pickle", "wb") as f:

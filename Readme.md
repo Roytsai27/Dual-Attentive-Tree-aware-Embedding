@@ -64,7 +64,9 @@ __Important:__ make sure you create a folder named "results" to store the result
 ```
 
 ## Main Results
+Results on proprietary Nigerian import declarations.
 ![](https://i.imgur.com/20EwrQQ.png)
+
 
 ## Other Experiments & Codes 
 Code for auxiliary experiments are uploaded in the `experiments/` directory.

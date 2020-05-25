@@ -17,8 +17,13 @@ from utils import torch_threshold, fgsm_attack, metrics
 
 warnings.filterwarnings("ignore")
 
+if not os.path.exists('./results'):
+    os.makedirs('./results')
+if not os.path.exists('./saved_models'):
+    os.makedirs('./saved_models')
+
 # load torch dataset 
-with open("../torch_data.pickle","rb") as f:
+with open("./torch_data.pickle","rb") as f:
     data = pickle.load(f)
 
 # get torch dataset 
@@ -211,7 +216,7 @@ if __name__ == '__main__':
                         )
     parser.add_argument('--l2',
                         type=float,
-                        default=0.00,
+                        default=0.01,
                         help="l2 reg",
                         )
     parser.add_argument('--alpha',
@@ -248,6 +253,8 @@ if __name__ == '__main__':
     overall_f1, auc, precisions, recalls, f1s, revenues = evaluate(save_model)
 
     # save result
+    
+    
     output_file =  "./results/" + args.output
     print("Saving result...",output_file)
     with open(output_file, 'a') as ff:

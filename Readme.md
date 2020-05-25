@@ -33,13 +33,13 @@ __Important:__ make sure you create a folder named "results" to store the result
 ```
 --epoch: number of epochs
 --l2: l2 regularization 
---dim: dimension for hidden layer
---use_self: Use leaf-wise self attention or not 
+--dim: dimension for hidden layers
+--use_self: Use leaf-wise self-attention or not 
 --alpha: The adaptive weight to balance the scale and importance for regression loss
 --lr: learning rate
 --head_num: number of heads for self-attention
 --act: activation function (Relu or Mish)
---device: The device name for training, if train with cpu please use:"cpu" 
+--device: The device name for training, if train with cpu, please use:"cpu" 
 --output: save the performance output in a csv file
 ```
 
@@ -56,8 +56,8 @@ Code for auxiliary experiments are uploaded in the `experiments/` directory.
 
 
 ## Synthetic Data
-For your understanding, synthetic import declarations are uploaded in the `data/` directory.
-To use this repository, users are expected to preprocess their own import declarations into the similar format.
+For your understanding, we upload the synthetic import declarations in the `data/` directory.
+Users are expected to preprocess their own import declarations into a similar format.
 Note that the variable name used in the code can be slightly different from the synthetic data.
 
 |sgd.id|sgd.date  |importer.id| tariff.code| ... |cif.value|total.taxes|illicit|revenue|
@@ -69,7 +69,7 @@ Note that the variable name used in the code can be slightly different from the 
 | SGD5 | 13-01-02 | IMP717900 |8545200000  | ... |239549   | 397       | 1     | 980   |
 
 ## Citation
-If you mention or use DATE for your publication, please cite the original paper:
+If you mention DATE for your publication, please cite the original paper:
 ```LaTeX
 @inproceedings{kimtsai2020date,
   title={DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection},

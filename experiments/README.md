@@ -1,4 +1,4 @@
-### Code for Auxiliary Experiments
+## Code for Auxiliary Experiments
 
 In this directory, we provide codes and bash scripts for running auxiliary experiments:
 * revcls: Section 5.1, date_cls and date_rev results 
@@ -7,9 +7,11 @@ In this directory, we provide codes and bash scripts for running auxiliary exper
 * hyperparameter-analysis: Section 7.1-2, hyperparameter analysis
 * loss-weight: Section 7.3, date_cls and date_rev by controlling alpha
 
+---
+
 Note that there are minor differences of variable names used in these codes.
 
-Features
+**Features**
 * 'SGD.NAME' → 'sgd.id'
 * 'SGD.DATE' → 'sgd.date'
 * 'IMPORTER.TIN' → 'importer.id'
@@ -23,9 +25,9 @@ Features
 * 'CIF.VALUE' → 'cif.value'
 * 'TOTAL.TAXES' → 'total.taxes'
 
-Labels
+**Labels**
 * 'illicit' → 'illicit'
 * 'RAISED_TAX_AMOUNT' → 'revenue'
 
-Removed Features
+**Removed Features**
 * 'RECEIPT.DATE'

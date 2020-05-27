@@ -14,3 +14,4 @@ xgb_model.txt
 saved_models/
 .ipynb_checkpoints/
 __pycache__/
+.gitignore

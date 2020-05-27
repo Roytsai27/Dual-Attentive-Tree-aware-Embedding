@@ -17,11 +17,6 @@ from utils import torch_threshold, fgsm_attack, metrics
 
 warnings.filterwarnings("ignore")
 
-if not os.path.exists('./results'):
-    os.makedirs('./results')
-if not os.path.exists('./saved_models'):
-    os.makedirs('./saved_models')
-
 # load torch dataset 
 with open("./torch_data.pickle","rb") as f:
     data = pickle.load(f)
@@ -193,6 +188,12 @@ def evaluate(save_model):
 
 if __name__ == '__main__':
     # Parse argument
+    if not os.path.exists('./results'):
+        os.makedirs('./results')
+    if not os.path.exists('./saved_models'):
+        os.makedirs('./saved_models')
+
+    
     parser = argparse.ArgumentParser()
     parser.add_argument('--model_name', 
                         type=str, 
@@ -232,7 +233,7 @@ if __name__ == '__main__':
     parser.add_argument('--act', type=str, choices=["mish","relu"], default="relu", help="Activation function")
     parser.add_argument('--device', type=str, choices=["cuda:0","cuda:1","cpu"], default="cuda:0", help="device name for training")
     parser.add_argument('--output', type=str, default="full.csv", help="Name of output file")
-    parser.add_argument('--save', type=int, default=0, help="save model or not")
+    parser.add_argument('--save', type=int, default=1, help="save model or not")
 
     # args
     args = parser.parse_args()

@@ -6,6 +6,7 @@ In this directory, we provide codes and bash scripts for running auxiliary exper
 * corrupted-data: Section 6, way to leverage existing data
 * hyperparameter-analysis: Section 7.1-2, hyperparameter analysis
 * loss-weight: Section 7.3, date_cls and date_rev by controlling alpha
+* [cross-feature](Extracting-cross-features-from-attention-network.ipynb): Section 5.6, finding effective cross features with high attention weight 
 
 ---
 

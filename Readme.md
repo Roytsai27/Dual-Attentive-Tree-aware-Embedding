@@ -48,7 +48,10 @@ Also, the scipt will dump a pickle file for embedding model input.
 3. Run train.py
 You can tune the hyper parameters by adding args after train.py.
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
+
 __Important:__ With default settings, the model will run on synthetic data.
+
+__Note:__ [DATE_manual](DATE_manual.ipynb) provides a step-by-step execution of DATE model and detailed explanation of each method.
 ```
 --epoch: number of epochs
 --l2: l2 regularization 

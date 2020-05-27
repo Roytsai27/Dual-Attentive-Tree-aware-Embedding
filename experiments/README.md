@@ -6,7 +6,7 @@ In this directory, we provide codes and bash scripts for running auxiliary exper
 * corrupted-data: Section 6, way to leverage existing data
 * hyperparameter-analysis: Section 7.1-2, hyperparameter analysis
 * loss-weight: Section 7.3, date_cls and date_rev by controlling alpha
-* [interpreting-results](Interpreting-DATE-results.html): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight 
+* [interpreting-results](./Interpreting-DATE-results.ipynb): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight 
 
 ---
 

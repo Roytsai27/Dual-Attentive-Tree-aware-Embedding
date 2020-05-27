@@ -39,12 +39,12 @@ Users are expected to preprocess their own import declarations into a similar fo
 * pandas==0.25.3 
 
 ## How to Train the Model
-Our proposed DATE is a two-stage model, we train XGBoost model first and use the pre-trained model to generate cross feature for second embedding model.
+Our proposed DATE is a two-stage model, we train XGBoost(XGB) model first and use the pre-trained model to generate cross feature for second embedding model.
 
 1. Run preprocess_data.py 
 This script would run the preprocessing for raw data from customs and dump a preprocessed file.
 2. Run generate_loader.py
-This will train and evaluate Xgboost model and XGB+LR model.
+This will train and evaluate XGB model and XGB+LR model.
 Also, the scipt will dump a pickle file for embedding model input.
 3. Run train.py
 You can tune the hyper parameters by adding args after train.py.
@@ -67,7 +67,7 @@ __Note:__ [DATE_manual](DATE_manual.ipynb) provides a step-by-step execution of 
 ```
 
 ## Main Results
-Results on proprietary Nigerian import declarations.
+Below table illustrates the DATE model and its baseline results of the Nigerian import declarations.
 ![](figures/main_results.png)
 
 

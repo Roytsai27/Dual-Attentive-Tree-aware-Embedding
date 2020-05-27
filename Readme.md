@@ -9,6 +9,7 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 * DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
 
 ## Overview of the Transaction-level Import Data
+An Import Declaration is a statement made by the importer (owner of the goods), or their agent (licensed customs broker), to provide information about the goods being imported. The Import Declaration collects details on the importer, how the goods are being transported, the tariff classification and customs value.
 ![](https://i.imgur.com/Rj5MCzo.png)
 
 ### Synthetic Data
@@ -72,7 +73,6 @@ Results on proprietary Nigerian import declarations.
 
 ## Other Experiments & Codes 
 Code for auxiliary experiments are uploaded in the `experiments/` directory.
-Note that the variable name used in these experiments are slightly different from the synthetic data.
 
 * revcls: Section 5.1, date_cls and date_rev results 
 * training-length: Section 5.4, effects on training length

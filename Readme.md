@@ -99,6 +99,8 @@ Code for auxiliary experiments are uploaded in the `experiments/` directory.
 * [hyperparameter-analysis](./experiments/kdd2020-exp-hyperparameter-analysis): Section 7.1-2, hyperparameter analysis
 * [loss-weight](./experiments/kdd2020-exp-loss-weight): Section 7.3, date_cls and date_rev by controlling alpha
 * [interpreting-results](./experiments/Interpreting-DATE-Results.ipynb): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight
+
+If you want to use DATE for pilot test, please refer this directory.
 * [weekly-customs-selection](./experiments/weekly-customs-selection/): Using DATE model prediction results for customs selection in batch, which can be done daily or weekly.
 
 

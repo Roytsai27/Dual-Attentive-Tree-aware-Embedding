@@ -8,6 +8,7 @@ In this directory, we provide codes and bash scripts for running auxiliary exper
 * [hyperparameter-analysis](./kdd2020-exp-hyperparameter-analysis): Section 7.1-2, hyperparameter analysis
 * [loss-weight](./kdd2020-exp-loss-weight): Section 7.3, date_cls and date_rev by controlling alpha
 * [interpreting-results](./Interpreting-DATE-Results.ipynb): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight 
+* [weekly-customs-selection](./weekly-customs-selection/): Using DATE model prediction results for customs selection in batch, which can be done daily or weekly.
 
 ---
 

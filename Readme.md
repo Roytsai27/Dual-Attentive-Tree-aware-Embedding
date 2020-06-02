@@ -10,6 +10,7 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 
 ## Overview of the Transaction-level Import Data
 An Import Declaration is a statement made by the importer (owner of the goods), or their agent (licensed customs broker), to provide information about the goods being imported. The Import Declaration collects details on the importer, how the goods are being transported, the tariff classification and customs value.
+
 ![](https://i.imgur.com/Rj5MCzo.png)
 
 ### Synthetic Data
@@ -26,27 +27,29 @@ Users are expected to preprocess their own import declarations into a similar fo
 
 
 ## Model Architecture
+DATE consists of three stages. The first stage pre-trains a tree-based classifier to generate cross features of each transaction. The second stage is a dual attentive mechanism that learns both the interactions among cross features and the interactions among importers, HS codes, and cross features. The third stage is the dual-task learning by jointly optimizing illicitness classification and revenue prediction. The overall architecture is depicted in Figure 2.
+
 ![](figures/model_architecture.jpg)
 
 
 ## Requirements
 * Ranger optimizer:
     * https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer
-* pytorch==1.0.0
+* pytorch>=1.0.0
 * torch_multi_head_attention
-* scikit-learn==0.21.0
-* numpy==1.16.4
-* pandas==0.25.3 
+* scikit-learn>=0.21.0
+* numpy>=1.16.4
+* pandas>=0.25.3 
 
 ## How to Train the Model
 Our proposed DATE is a two-stage model, we train XGBoost(XGB) model first and use the pre-trained model to generate cross feature for second embedding model.
 
-1. Run preprocess_data.py 
+1. Run `preprocess_data.py` 
 This script would run the preprocessing for raw data from customs and dump a preprocessed file.
-2. Run generate_loader.py
+2. Run `generate_loader.py`
 This will train and evaluate XGB model and XGB+LR model.
 Also, the scipt will dump a pickle file for embedding model input.
-3. Run train.py
+3. Run `train.py`
 You can tune the hyper parameters by adding args after train.py.
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 

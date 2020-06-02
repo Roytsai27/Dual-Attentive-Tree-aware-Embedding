@@ -67,7 +67,7 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 __Important:__ With default settings, the model will run on given synthetic data.
 
 ### Hyperparameters:
-* Parameters of `preprocess_data.py` and `generate_loader.py`: [Document](parameters.md)
+* Parameters of `preprocess_data.py` and `generate_loader.py`: Check this [Document](parameters.md).
 * Parameters of `train.py`:
 ```
 --epoch: number of epochs

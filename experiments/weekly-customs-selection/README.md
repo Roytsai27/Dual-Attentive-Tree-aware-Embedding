@@ -14,5 +14,5 @@ Written by: Sundong Kim, Institute for Basic Science
 * In our setting, we consider training period from 2016-01-01 ~ 2017-10-01 and 2017-10-01 ~ 2017-12-31 as a validation period.
 
 #### Results 
-Considering the total number of imports are over two thousands, Top-10 high fraudulent transactions, and bottom-10 low fraudulent transactions selected by DATE and other models are quite consistent each other. [Jupyter Notebook](./weekly-custom-selection-results.ipynb).
+Considering the total number of imports are over two thousands, Top-10 high fraudulent transactions, and bottom-10 low fraudulent transactions selected by DATE and other models are quite consistent each other. Check this [Jupyter Notebook](./weekly-custom-selection-results.ipynb) for more details.
 ![See this figure](./DATE-customs-selection.png)

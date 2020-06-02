@@ -15,4 +15,5 @@ Written by: Sundong Kim, Institute for Basic Science
 
 #### Results 
 Considering the total number of imports are over two thousands, Top-10 high fraudulent transactions, and bottom-10 low fraudulent transactions selected by DATE and other models are quite consistent each other. Check this [Jupyter Notebook](./weekly-custom-selection-results.ipynb) for more details.
+
 ![See this figure](./DATE-customs-selection.png)

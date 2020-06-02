@@ -56,17 +56,18 @@ pip install -r requirements.txt
 
 ## How to Train the Model
 1. Run `preprocess_data.py` 
-This script would run the preprocessing for raw data from customs and dump a preprocessed file.
+This script would run the preprocessing for raw data from customs and dump a preprocessed file for training XGB model in step 2.
 2. Run `generate_loader.py`
-This will train and evaluate XGB model and XGB+LR model.
-Also, the scipt will dump a pickle file for embedding model input.
+This will train and evaluate the XGB model and XGB+LR model.
+Also, the scipt will dump a pickle file for training a DATE model in step 3.
 3. Run `train.py`
-You can tune the hyper parameters by adding args after train.py.
+This will train and evaluate the DATE model, you can tune the hyperparameters by adding args after train.py.
 e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 
-__Important:__ With default settings, the model will run on synthetic data.
+__Important:__ With default settings, the model will run on given synthetic data.
 
-### Parameters:
+### Hyperparameters:
+* Parameters of `preprocess_data.py` and `generate_loader.py`: [Document](parameters.md)
 * Parameters of `train.py`:
 ```
 --epoch: number of epochs
@@ -80,7 +81,7 @@ __Important:__ With default settings, the model will run on synthetic data.
 --device: The device name for training, if train with cpu, please use:"cpu" 
 --output: save the performance output in a csv file
 ```
-* Parameters of `preprocess_data.py` and `generate_loader.py`: [Check this document](parameters.md)
+
 
 
 ## Main Results

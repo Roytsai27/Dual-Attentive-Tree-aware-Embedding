@@ -2,11 +2,11 @@
 Written by: Sundong Kim, Institute for Basic Science
 
 #### Preparation
-* First, locate the training data under the directory './data/'
-* Second, locate the weekly dataset under the directory './weekly-data/', the weekly dataset name should follow 'week*_ano.csv'
+* First, locate the training data under the directory `./data/`
+* Second, locate the weekly dataset under the directory `./weekly-data/`, the weekly dataset name should follow `week*_ano.csv`
 
 #### Prediction
-* To make a prediction, run pilot.sh ($ bash pilot.sh). By running this bash script, XGBoost classifier, XGBoost + Logistic regression, and two variants of our DATE model predict the test data.
+* To make a prediction, run pilot.sh (`$ bash pilot.sh`). By running this bash script, XGBoost classifier, XGBoost + Logistic regression, and two variants of our DATE model predict the test data.
 * The prediction result will be saved under the './weekly-data/' with the file name of 'week*_ano_result'.
 
 #### Parameter tuning
@@ -14,6 +14,5 @@ Written by: Sundong Kim, Institute for Basic Science
 * In our setting, we consider training period from 2016-01-01 ~ 2017-10-01 and 2017-10-01 ~ 2017-12-31 as a validation period.
 
 #### Results 
-Considering the total number of imports are over two thousands, Top-10 high fraudulent transactions, and bottom-10 low fraudulent transactions selected by DATE and other models are quite consistent each other.
-
+Considering the total number of imports are over two thousands, Top-10 high fraudulent transactions, and bottom-10 low fraudulent transactions selected by DATE and other models are quite consistent each other. [Jupyter Notebook](./weekly-custom-selection-results.ipynb).
 ![See this figure](./DATE-customs-selection.png)

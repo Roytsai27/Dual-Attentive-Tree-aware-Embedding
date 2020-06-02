@@ -100,7 +100,8 @@ Code for auxiliary experiments are uploaded in the `experiments/` directory.
 * [loss-weight](./experiments/kdd2020-exp-loss-weight): Section 7.3, date_cls and date_rev by controlling alpha
 * [interpreting-results](./experiments/Interpreting-DATE-Results.ipynb): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight
 
-If you want to use DATE for pilot test, please refer this directory.
+## Customs Selection in Batch
+If you want to use DATE and other baselines for pilot test, please refer this directory.
 * [weekly-customs-selection](./experiments/weekly-customs-selection/): Using DATE model prediction results for customs selection in batch, which can be done daily or weekly.
 
 

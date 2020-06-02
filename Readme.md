@@ -52,7 +52,7 @@ git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
 ```
 pip install -r requirements.txt
 ```
-3. Check [DATE_manual](DATE_manual.ipynb) to grasp how it works
+3. Check [DATE_manual](DATE_manual.ipynb) to grasp how the DATE model works. The manual provides a step-by-step execution of DATE model and detailed explanation of its sub-modules.
 
 ## How to Train the Model
 1. Run `preprocess_data.py` 
@@ -66,9 +66,8 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 
 __Important:__ With default settings, the model will run on synthetic data.
 
-__Note:__ [DATE_manual](DATE_manual.ipynb) provides a step-by-step execution of DATE model and detailed explanation of each method.
-
-Parameters for `train.py`
+### Parameters:
+* Parameters of `train.py`:
 ```
 --epoch: number of epochs
 --l2: l2 regularization 
@@ -81,7 +80,7 @@ Parameters for `train.py`
 --device: The device name for training, if train with cpu, please use:"cpu" 
 --output: save the performance output in a csv file
 ```
-Parameters for `preprocess_data.py` and `generate_loader.py`: [Check this document](parameters.md)
+* Parameters of `preprocess_data.py` and `generate_loader.py`: [Check this document](parameters.md)
 
 
 ## Main Results

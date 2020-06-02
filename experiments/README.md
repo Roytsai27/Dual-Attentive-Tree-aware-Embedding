@@ -2,6 +2,7 @@
 
 In this directory, we provide codes and bash scripts for running auxiliary experiments:
 * revcls: Section 5.1, date_cls and date_rev results 
+* ablation-studies: Section 5.3, includes w/o attention network and w/o fusion. Modify `model/AttTreeEmbedding.py` with the provided code. w/o dual task learning and w/o multi-head self attention could be done by setting args in `train.py`
 * training-length: Section 5.4, effects on training length
 * corrupted-data: Section 6, way to leverage existing data
 * hyperparameter-analysis: Section 7.1-2, hyperparameter analysis

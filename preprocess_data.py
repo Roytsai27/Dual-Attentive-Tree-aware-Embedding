@@ -135,11 +135,11 @@ def tag_risky_profiles(df: pd.DataFrame, profile: str, profiles: list or dict, o
 
 
 # Dataset settings
-data_length = df.shape[0]
-train_ratio = 0.6
-valid_ratio = 0.8
-train_length = int(data_length*train_ratio)
-valid_length = int(data_length*valid_ratio)
+# data_length = df.shape[0]
+# train_ratio = 0.6
+# valid_ratio = 0.8
+# train_length = int(data_length*train_ratio)
+# valid_length = int(data_length*valid_ratio)
 
 # split train/valid/test set
 # train = df.iloc[:train_length,:]

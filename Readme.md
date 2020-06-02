@@ -8,6 +8,7 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 * DATE learns simultaneously from illicitness and surtax of each transaction.
 * DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
 
+
 ## Overview of the Transaction-level Import Data
 An Import Declaration is a statement made by the importer (owner of the goods), or their agent (licensed customs broker), to provide information about the goods being imported. The Import Declaration collects details on the importer, how the goods are being transported, the tariff classification and customs value.
 
@@ -41,9 +42,19 @@ DATE consists of three stages. The first stage pre-trains a tree-based classifie
 * numpy>=1.16.4
 * pandas>=0.25.3 
 
-## How to Train the Model
-Our proposed DATE is a two-stage model, we train XGBoost(XGB) model first and use the pre-trained model to generate cross feature for second embedding model.
 
+## How to Install  
+1. Clone the repository
+```
+git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
+```
+2. Install requirements
+```
+pip install -r requirements.txt
+```
+3. Check [DATE_manual](DATE_manual.ipynb) to grasp how it works
+
+## How to Train the Model
 1. Run `preprocess_data.py` 
 This script would run the preprocessing for raw data from customs and dump a preprocessed file.
 2. Run `generate_loader.py`
@@ -56,6 +67,8 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 __Important:__ With default settings, the model will run on synthetic data.
 
 __Note:__ [DATE_manual](DATE_manual.ipynb) provides a step-by-step execution of DATE model and detailed explanation of each method.
+
+Parameters for `train.py`
 ```
 --epoch: number of epochs
 --l2: l2 regularization 
@@ -68,9 +81,12 @@ __Note:__ [DATE_manual](DATE_manual.ipynb) provides a step-by-step execution of 
 --device: The device name for training, if train with cpu, please use:"cpu" 
 --output: save the performance output in a csv file
 ```
+Parameters for `preprocess_data.py` and `generate_loader.py`: [Check this document](parameters.md)
+
 
 ## Main Results
 Below table illustrates the DATE model and its baseline results of the Nigerian import declarations.
+
 ![](figures/main_results.png)
 
 

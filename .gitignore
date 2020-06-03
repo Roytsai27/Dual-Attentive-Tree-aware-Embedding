@@ -15,4 +15,3 @@ saved_models/
 .ipynb_checkpoints/
 __pycache__/
 .gitignore
-experiments/weekly-customs-selection/weekly-data/*.csv

@@ -34,10 +34,9 @@ DATE consists of three stages. The first stage pre-trains a tree-based classifie
 
 
 ## Requirements
-* Ranger optimizer:
-    * https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer
+* [Ranger optimizer](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer)
+* [torch_multi_head_attention](https://github.com/CyberZHG/torch-multi-head-attention)
 * pytorch>=1.0.0
-* torch_multi_head_attention
 * scikit-learn>=0.21.0
 * numpy>=1.16.4
 * pandas>=0.25.3 
@@ -67,7 +66,7 @@ e.g. python3 train.py --epoch 10 --l2 1e-6 etc.
 __Important:__ With default settings, the model will run on given synthetic data.
 
 ### Hyperparameters:
-* Parameters of `preprocess_data.py` and `generate_loader.py`: Check this [Document](parameters.md).
+* Parameters of `preprocess_data.py` and `generate_loader.py`: Check this [document](parameters.md).
 * Parameters of `train.py`:
 ```
 --epoch: number of epochs

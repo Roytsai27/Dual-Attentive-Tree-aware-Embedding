@@ -58,7 +58,7 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     merge_attributes(df, 'office.id','HS6')
     merge_attributes(df, 'office.id','country')
     
-    df['sgd.date'] = df['sgd.date'].apply(lambda x: datetime.strptime(x, '%y-%m-%d'))
+    df['sgd.date'] = df['sgd.date'].apply(lambda x: dt.strptime(x, '%y-%m-%d'))
     df.loc[:, 'SGD.DayofYear'] = df['sgd.date'].dt.dayofyear
     df.loc[:, 'SGD.WeekofYear'] = df['sgd.date'].dt.weekofyear
     df.loc[:, 'SGD.MonthofYear'] = df['sgd.date'].dt.month

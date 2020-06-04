@@ -58,23 +58,10 @@ def preprocess(df: pd.DataFrame) -> pd.DataFrame:
     merge_attributes(df, 'office.id','HS6')
     merge_attributes(df, 'office.id','country')
     
-    
-    # Day of Year of sgd.date
-    tmp2 = {}
-    for date in set(df['sgd.date']):
-        tmp2[date] = dt.strptime(date, '%y-%m-%d')
-    tmp_day = {}
-    tmp_week = {}
-    tmp_month = {}
-    yearStart = dt(tmp2[date].date().year, 1, 1)
-    for item in tmp2:
-        tmp_day[item] = (tmp2[item] - yearStart).days
-        tmp_week[item] = int(tmp_day[item] / 7)
-        tmp_month[item] = int(tmp_day[item] / 30)
-        
-    df.loc[:, 'SGD.DayofYear'] = df['sgd.date'].apply(lambda x: tmp_day[x])
-    df.loc[:, 'SGD.WeekofYear'] = df['sgd.date'].apply(lambda x: tmp_week[x])
-    df.loc[:, 'SGD.MonthofYear'] = df['sgd.date'].apply(lambda x: tmp_month[x])
+    df['sgd.date'] = df['sgd.date'].apply(lambda x: datetime.strptime(x, '%y-%m-%d'))
+    df.loc[:, 'SGD.DayofYear'] = df['sgd.date'].dt.dayofyear
+    df.loc[:, 'SGD.WeekofYear'] = df['sgd.date'].dt.weekofyear
+    df.loc[:, 'SGD.MonthofYear'] = df['sgd.date'].dt.month
     return df
 
 

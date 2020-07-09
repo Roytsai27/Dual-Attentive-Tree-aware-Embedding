@@ -104,7 +104,7 @@ If you want to use DATE and other baselines for pilot test, please refer this di
 * [weekly-customs-selection](./experiments/weekly-customs-selection/): Using DATE model prediction results for customs selection in batch, which can be done daily or weekly.
 
 
-## BACUDA Project
+## Promotional Video
 [![Watch the video](figures/bacuda-youtube.jpg)](https://youtu.be/YhfxCHBNM2g)
 
 

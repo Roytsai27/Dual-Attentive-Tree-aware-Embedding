@@ -3,7 +3,7 @@
 
 Implementation of our KDD paper [DATE: Dual Attentive Tree-aware Embedding for Customs Fraud Detection](./KDD2020/kdd2020-date-paper.pdf). 
 
-[[Slides]](./KDD2020/kdd2020-date-slides.pdf) [[Presentation]](https://youtu.be/S-29rTbvH6c) [[Promotional video](https://youtu.be/YhfxCHBNM2g)
+[[Slides]](./KDD2020/kdd2020-date-slides.pdf) [[Presentation]](https://youtu.be/S-29rTbvH6c) [[Promotional video]](https://youtu.be/YhfxCHBNM2g)
 
 DATE is a model to classify and rank illegal trade flows that contribute the most to the overall customs revenue when caught.
 * DATE combines a tree-based model for interpretability and transaction-level embeddings with dual attention mechanisms. 

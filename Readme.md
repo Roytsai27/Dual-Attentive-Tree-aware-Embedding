@@ -11,7 +11,7 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 * DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
 
 ## Preliminaries
-For preliminary understanding, we suggest readers to look below repository, which is is dedicated to providing stepping stones toward DATE model for Customs administrations and officials, who want to develop their capacities to use machine learning in their daily works. The repository provides prerequisite knowledge and practices for machine learning, so that Customs community could better understand cutting edge algorithms in DATE model.
+For preliminary understanding, we suggest readers to look below repository, which is dedicated to providing stepping stones toward DATE model for Customs administrations and officials, who want to develop their capacities to use machine learning in their daily works. The repository provides prerequisite knowledge and practices for machine learning, so that Customs community could better understand cutting edge algorithms in DATE model.
 > [Machine Learning for Customs Fraud Detection](https://github.com/YSCHOI-github/Customs_Fraud_Detection)
 
 

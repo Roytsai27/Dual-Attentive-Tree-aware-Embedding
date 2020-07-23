@@ -51,17 +51,25 @@ DATE consists of three stages. The first stage pre-trains a tree-based classifie
 Please refer to the [issue](https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding/issues/2) if you faced CUDA version mismatch. 
 
 ## How to Install  
-1. Clone the repository
+1. Setup your Python environment: e.g., Anaconda Python 3.7 [Guide](docs.conda.io/projects/conda/en/latest/user-guide/tasks/manage-environments.html)
 ```
-git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
+$ source activate py37 
 ```
-2. Install requirements 
+
+2. Clone the repository
 ```
-pip install -r requirements.txt
+$ git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
+```
+
+3. Install requirements 
+```
+$ pip install -r requirements.txt
 # Please install Ranger optimizer by following its instruction.
 ```
 
-3. Check [DATE_manual](DATE_manual.ipynb) to grasp how the DATE model works. The manual provides a step-by-step execution of DATE model and detailed explanation of its sub-modules.
+4. Check [DATE_manual](DATE_manual.ipynb) to grasp how the DATE model works. The manual provides a step-by-step execution of DATE model and detailed explanation of its sub-modules.
+
+
 
 ## How to Train the Model
 1. Run `preprocess_data.py` 

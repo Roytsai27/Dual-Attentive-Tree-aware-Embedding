@@ -6,3 +6,4 @@ numpy>=1.16.4
 pandas>=0.25.3 
 xgboost
 scipy
+matplotlib

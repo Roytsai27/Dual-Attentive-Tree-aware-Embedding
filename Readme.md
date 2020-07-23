@@ -34,7 +34,7 @@ Users are expected to preprocess their own import declarations into a similar fo
 
 
 ## Model Architecture
-DATE consists of three stages. The first stage pre-trains a tree-based classifier to generate cross features of each transaction. The second stage is a dual attentive mechanism that learns both the interactions among cross features and the interactions among importers, HS codes, and cross features. The third stage is the dual-task learning by jointly optimizing illicitness classification and revenue prediction. The overall architecture is depicted in Figure 2.
+DATE consists of three stages. The first stage pre-trains a tree-based classifier to generate cross features of each transaction. The second stage is a dual attentive mechanism that learns both the interactions among cross features and the interactions among importers, HS codes, and cross features. The third stage is the dual-task learning by jointly optimizing illicitness classification and revenue prediction. The overall architecture is depicted in the below figure.
 
 ![](figures/model_architecture.jpg)
 
@@ -46,7 +46,8 @@ DATE consists of three stages. The first stage pre-trains a tree-based classifie
 * scikit-learn>=0.21.0
 * numpy>=1.16.4
 * pandas>=0.25.3 
-
+* Others: scipy, matplotlib
+Please refer to the [issue](https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding/issues/2) if you faced CUDA version mismatch. 
 
 ## How to Install  
 1. Clone the repository
@@ -57,6 +58,8 @@ git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
 ```
 pip install -r requirements.txt
 ```
+Besides, please install [Ranger optimizer](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer) by following its instruction.
+
 3. Check [DATE_manual](DATE_manual.ipynb) to grasp how the DATE model works. The manual provides a step-by-step execution of DATE model and detailed explanation of its sub-modules.
 
 ## How to Train the Model

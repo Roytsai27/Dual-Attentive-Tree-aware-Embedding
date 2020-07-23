@@ -58,7 +58,7 @@ git clone https://github.com/Roytsai27/Dual-Attentive-Tree-aware-Embedding.git
 2. Install requirements 
 ```
 pip install -r requirements.txt
-# Please install [Ranger optimizer](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer) by following its instruction.
+# Please install Ranger optimizer by following its instruction.
 ```
 
 3. Check [DATE_manual](DATE_manual.ipynb) to grasp how the DATE model works. The manual provides a step-by-step execution of DATE model and detailed explanation of its sub-modules.

@@ -198,7 +198,7 @@ if __name__ == '__main__':
     
     
     # Training data
-    df = pd.read_csv('./data/Nigeria_train_2013-2017/Ndata.merged.anonymized.single_tax_relabeled.csv', encoding = "ISO-8859-1")
+    df = pd.read_csv('./data/train.csv', encoding = "ISO-8859-1")
     # Weekly testing data
     dft = pd.read_csv(input_path)
     print("Data is loaded.")

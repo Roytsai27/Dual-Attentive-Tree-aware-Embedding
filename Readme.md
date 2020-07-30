@@ -40,6 +40,7 @@ DATE consists of three stages. The first stage pre-trains a tree-based classifie
 
 
 ## Requirements
+To run this code fully, you will need these repositories. We have been running our code in Python 3.7.
 * [Ranger optimizer](https://github.com/lessw2020/Ranger-Deep-Learning-Optimizer)
 * [torch_multi_head_attention](https://github.com/CyberZHG/torch-multi-head-attention)
 * pytorch>=1.0.0

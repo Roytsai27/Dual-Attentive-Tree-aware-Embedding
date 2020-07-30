@@ -231,7 +231,7 @@ if __name__ == '__main__':
     parser.add_argument('--fusion', type=str, choices=["concat","attention"], default="concat", help="Fusion method for final embedding")
     parser.add_argument('--agg', type=str, choices=["sum","max","mean"], default="sum", help="Aggreate type for leaf embedding")
     parser.add_argument('--act', type=str, choices=["mish","relu"], default="relu", help="Activation function")
-    parser.add_argument('--device', type=str, choices=["cuda:0","cuda:1","cpu"], default="cuda:0", help="device name for training")
+    parser.add_argument('--device', type=str, default="cuda:0", help="device name for training")
     parser.add_argument('--output', type=str, default="full.csv", help="Name of output file")
     parser.add_argument('--save', type=int, default=1, help="save model or not")
 

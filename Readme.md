@@ -18,7 +18,7 @@ For preliminary understanding, we suggest readers to look below repository, whic
 ## Overview of the Transaction-level Import Data
 An Import Declaration is a statement made by the importer (owner of the goods), or their agent (licensed customs broker), to provide information about the goods being imported. The Import Declaration collects details on the importer, how the goods are being transported, the tariff classification and customs value.
 
-![](https://i.imgur.com/Rj5MCzo.png)
+![](https://imgur.com/a/UmJJ5wu)
 
 ### Synthetic Data
 For your understanding, we upload the synthetic import declarations in the `data/` directory.

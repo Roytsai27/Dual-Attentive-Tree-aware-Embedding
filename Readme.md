@@ -10,6 +10,12 @@ DATE is a model to classify and rank illegal trade flows that contribute the mos
 * DATE learns simultaneously from illicitness and surtax of each transaction.
 * DATE shows 92.7% precision on illegal cases and a recall of 49.3% on revenue after inspecting only 1% of all trade flows in Nigeria.
 
+
+## News
+We released a new repository for simulating customs targeting system. Dozens of selection strategies are prepared with DATE. Please find our new code.
+* [Customs-fraud-detection](https://github.com/seondong/Customs-Fraud-Detection)
+
+
 ## Preliminaries
 For preliminary understanding, we suggest readers to look below repository, which is dedicated to providing stepping stones toward DATE model for Customs administrations and officials, who want to develop their capacities to use machine learning in their daily works. The repository provides prerequisite knowledge and practices for machine learning, so that Customs community could better understand cutting edge algorithms in DATE model.
 > [Machine Learning for Customs Fraud Detection](https://github.com/YSCHOI-github/Customs_Fraud_Detection)
@@ -124,7 +130,7 @@ Code for auxiliary experiments are uploaded in the `experiments/` directory.
 * [interpreting-results](./experiments/Interpreting-DATE-Results.ipynb): Section 5.6, interpreting DATE results by finding effective cross-features with high attention weight
 
 ## Customs Selection in Batch
-If you want to use DATE and other baselines for pilot test, please refer this directory.
+If you want to use DATE and other baselines for pilot test, please refer to this directory.
 * [weekly-customs-selection](./experiments/weekly-customs-selection/): Using DATE model prediction results for customs selection in batch, which can be done daily or weekly.
 
 
